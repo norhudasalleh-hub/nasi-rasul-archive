@@ -190,3 +190,51 @@ footer p{line-height:1.6;margin:0 0 10px}
 }
 .hero .kicker{color:#fff;opacity:.92}
 .kad-rekod .buka{align-self:flex-start}
+
+/* ---------- pemilih bahasa dan notis draf ---------- */
+.langs{display:flex;border:1px solid rgba(255,255,255,.28);border-radius:2px;overflow:hidden}
+.langs button{font:700 12px var(--sans);letter-spacing:.06em;padding:7px 9px;background:none;border:0;color:rgba(255,255,255,.62);cursor:pointer;line-height:1}
+.langs button+button{border-inline-start:1px solid rgba(255,255,255,.18)}
+.langs button[data-l="jw"]{font-family:'Noto Naskh Arabic',serif;font-size:14px;letter-spacing:0;padding-top:5px;padding-bottom:6px}
+.langs button[data-l="zh"]{font-family:'Noto Sans SC',sans-serif;letter-spacing:0}
+.langs button.on{color:var(--malam);background:var(--kunyit)}
+.langs button:not(.on):hover{color:#fff}
+.draf{background:var(--kunyit);color:var(--malam);text-align:center;font:600 13px var(--sans);padding:7px 16px}
+.kod{direction:ltr;unicode-bidi:isolate}
+
+/* ---------- Jawi (kanan ke kiri) ---------- */
+html[dir="rtl"] body{font-family:'Noto Naskh Arabic',serif}
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3,html[dir="rtl"] h4,html[dir="rtl"] .brand,html[dir="rtl"] .hero .sub{font-family:'Noto Naskh Arabic',serif;font-style:normal;letter-spacing:0}
+html[dir="rtl"] p,html[dir="rtl"] li,html[dir="rtl"] .nilai,html[dir="rtl"] .tambahan,html[dir="rtl"] blockquote,html[dir="rtl"] figcaption,html[dir="rtl"] .kredit{font-family:'Noto Naskh Arabic',serif;font-style:normal;line-height:1.95}
+html[dir="rtl"] .kicker,html[dir="rtl"] .menu,html[dir="rtl"] .menu a,html[dir="rtl"] .cta,html[dir="rtl"] .stat .l,html[dir="rtl"] .lbl,html[dir="rtl"] .buka,html[dir="rtl"] .item span,html[dir="rtl"] .pautan,html[dir="rtl"] .entri a,html[dir="rtl"] .penapis button,html[dir="rtl"] .kat,html[dir="rtl"] .kodrekod,html[dir="rtl"] cite,html[dir="rtl"] .breadcrumb,html[dir="rtl"] .brand small,html[dir="rtl"] .draf,html[dir="rtl"] .burger,html[dir="rtl"] .dasar{font-family:'Noto Naskh Arabic',serif;letter-spacing:0;text-transform:none}
+html[dir="rtl"] .kicker{font-size:15px}
+html[dir="rtl"] .menu{font-size:16px}
+html[dir="rtl"] .hero h1{font-weight:700;line-height:1.25;font-size:clamp(52px,9vw,112px)}
+html[dir="rtl"] .page-hero h1{line-height:1.35}
+html[dir="rtl"] .lede .teks p:first-of-type::first-letter{float:none;font-size:inherit;padding:0;color:inherit;font-weight:inherit;font-family:inherit}
+html[dir="rtl"] .feat blockquote{border-left:0;padding-left:0;border-right:4px solid var(--kunyit);padding-right:24px}
+html[dir="rtl"] .baris .tambahan{border-left:0;padding-left:0;border-right:3px solid var(--kunyit);padding-right:14px}
+html[dir="rtl"] .petik-kotak{border-left:0;border-right:4px solid var(--kunyit)}
+html[dir="rtl"] .item{padding:28px 0 32px 28px;border-right:0;border-left:1px solid var(--garis);margin-right:0;margin-left:28px}
+html[dir="rtl"] .item:last-child{border-left:0;margin-left:0}
+html[dir="rtl"] .entri{padding:32px 0 32px 28px}
+html[dir="rtl"] .kod{left:auto;right:16px}
+html[dir="rtl"] .kad-rekod .kat{left:auto;right:12px}
+html[dir="rtl"] .kad-rekod{text-align:right}
+html[dir="rtl"] .tutup{right:auto;left:12px}
+html[dir="rtl"] .page-hero.berfoto::before{background:linear-gradient(270deg,rgba(15,10,6,.94) 0%,rgba(15,10,6,.8) 50%,rgba(15,10,6,.55) 100%)}
+
+/* ---------- Cina ringkas ---------- */
+html[lang="zh-Hans"] body,html[lang="zh-Hans"] p,html[lang="zh-Hans"] li,html[lang="zh-Hans"] .nilai,html[lang="zh-Hans"] figcaption,html[lang="zh-Hans"] .kredit{font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif}
+html[lang="zh-Hans"] h2,html[lang="zh-Hans"] h3,html[lang="zh-Hans"] h4,html[lang="zh-Hans"] .hero .sub,html[lang="zh-Hans"] blockquote,html[lang="zh-Hans"] .tambahan{font-family:'Fraunces','Noto Serif SC','Songti SC',serif;font-style:normal}
+html[lang="zh-Hans"] .kicker,html[lang="zh-Hans"] .menu,html[lang="zh-Hans"] .stat .l,html[lang="zh-Hans"] .lbl,html[lang="zh-Hans"] .penapis button{letter-spacing:.08em}
+html[lang="zh-Hans"] .lede .teks p:first-of-type::first-letter{float:none;font-size:inherit;padding:0;color:inherit;font-weight:inherit;font-family:inherit}
+
+@media (max-width:860px){
+  .brand small{display:none}
+  .langs button{padding:7px 6px;font-size:11px}
+  .langs button[data-l="jw"]{font-size:13px}
+  html[dir="rtl"] .item{border-left:0;margin-left:0;padding-left:0}
+  html[dir="rtl"] .entri{padding-left:0}
+}
+html[dir="rtl"] p[dir="ltr"]{text-align:right;font-family:var(--sans);line-height:1.6}
