@@ -169,6 +169,7 @@ const T = {
   metodHeading:{ms:"Nota Metodologi",en:"Methodology Notes"},
   metodP:{ms:"Ringkasan kaedah pengumpulan dan pengesahan data lapangan.",en:"A summary of how field data were collected and verified."},
   petikHeading:{ms:"Cara memetik laman ini",en:"How to cite this site"},
+  petikPeranan:{ms:"Data lapangan daripada kajian PhD Nor Adila Samuri. Laman dibangunkan oleh Dr. Norhuda Salleh (penyelia).",en:"Field data from the PhD research of Nor Adila Samuri. Site developed by Dr. Norhuda Salleh (supervisor)."},
 
   footHeading:{ms:"Nasi Rasul, Katalog Pemuliharaan Digital",en:"Nasi Rasul, Digital Preservation Catalogue"},
   footP1:{ms:"Prototaip dokumentasi digital sokongan Penyertaan Poster ICVIAS 2026, Fakulti Sains Sosial dan Kemanusiaan (FSSK), Universiti Malaysia Sabah.",en:"A digital documentation prototype supporting the ICVIAS 2026 poster entry, Faculty of Social Sciences and Humanities (FSSK), Universiti Malaysia Sabah."},
