@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Foto, Nasi Rasul</title>
+<meta name="description" content="10 rekod foto lapangan Nasi Rasul dengan metadata penuh.">
+<meta property="og:title" content="Katalog Foto, Nasi Rasul">
+<meta property="og:description" content="10 rekod foto lapangan Nasi Rasul dengan metadata penuh.">
+<meta property="og:image" content="https://norhudasalleh-hub.github.io/nasi-rasul-archive/images/hero-tdg-005.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Work+Sans:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><span class="tanda"></span><span data-i18n="brandName">Nasi Rasul</span> <small data-i18n="brandSmall">Arkib</small></a>
+  <div class="menu"><a href="index.html" data-i18n="navHome">Utama</a><a href="katalog.html" data-i18n="navKatalog" class="aktif">Katalog</a><a href="glosari.html" data-i18n="navGlosari">Glosari</a><a href="metodologi.html" data-i18n="navMetod">Metodologi</a></div>
+  <div class="nav-kanan"><div class="langs" role="group" aria-label="Bahasa / Language"><button type="button" data-l="ms" class="on" lang="ms">MS</button><button type="button" data-l="en" lang="en">EN</button><button type="button" data-l="jw" lang="ms-Arab" dir="rtl">جاوي</button><button type="button" data-l="zh" lang="zh-Hans">中文</button></div><button class="burger" type="button" data-i18n="menu">Menu</button></div>
+</div><div class="draf" id="draftNote" hidden></div></nav>
+<header class="page-hero berfoto" style="background-image:url(images/tdg-002.jpg)"><div class="wrap">
+  <div class="breadcrumb"><a href="index.html" data-i18n="navHome">Utama</a> / <span data-i18n="navKatalog">Katalog</span></div>
+  <div class="kicker" data-i18n="katalogKicker">Rekod Lapangan</div>
+  <h1 data-i18n="katalogHeading">Katalog Foto</h1>
+  <p data-i18n="katalogP">Klik mana-mana kad untuk membuka rekod metadata penuh, seperti membuka kad katalog di arkib fizikal.</p>
+</div></header>
+
+<section class="seksyen"><div class="wrap">
+  <div class="penapis">
+    <button type="button" class="aktif" data-filter="all" data-i18n="fAll">Semua (10)</button>
+    <button type="button" data-filter="Persediaan" data-i18n="fPersediaan">Persediaan</button>
+    <button type="button" data-filter="Bahan-Simbol" data-i18n="fBahan">Bahan-Simbol</button>
+    <button type="button" data-filter="Interaksi Informan" data-i18n="fInteraksi">Interaksi Informan</button>
+  </div>
+  <div class="grid-katalog" id="gridKatalog"></div>
+</div></section>
+<div class="latar-modal" id="latarModal" role="dialog" aria-modal="true"><div class="modal" id="isiModal"></div></div>
+<footer><div class="wrap">
+  <div class="grid">
+    <div><h4 data-i18n="footHeading">Nasi Rasul, Katalog Pemuliharaan Digital</h4><p data-i18n="footP1">Prototaip dokumentasi digital sokongan Penyertaan Poster ICVIAS 2026, Fakulti Sains Sosial dan Kemanusiaan (FSSK), Universiti Malaysia Sabah.</p><p data-i18n="footDev">Dibangunkan oleh Dr. Norhuda Salleh.</p></div>
+    <nav><h4 data-i18n="footLaman">Laman</h4><a href="index.html" data-i18n="navHome">Utama</a><a href="katalog.html" data-i18n="navKatalog">Katalog</a><a href="glosari.html" data-i18n="navGlosari">Glosari</a><a href="metodologi.html" data-i18n="navMetod">Metodologi</a></nav>
+    <div><h4 data-i18n="footRujukan">Rujukan</h4><p dir="ltr">Nor Adila Samuri &amp; Norhuda Salleh. (2026). Digital Preservation of Nasi Rasul: A Gastrosemiotic Documentation of Tidong Ritual Food (Kalabakan, Sabah). ICVIAS 2026.</p></div>
+  </div>
+  <div class="dasar"><span data-i18n="footNota">Prototaip awal. Foto lapangan sebenar, TDG-001 hingga TDG-010.</span><span><span data-i18n="visitLabel">Jumlah kunjungan laman</span>: <b id="visitCount">&ndash;</b></span></div>
+</div></footer>
+<script src="script.js"></script>
+<script data-goatcounter="https://nasirasul-ums.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
